@@ -3,7 +3,6 @@ const getSubmission = (req, res) => {
 };
 
 const postSubmission = (req, res) => {
-  console.log(req.body);
   const { username, password } = req.body;
   if (username === '' || password === '') {
     return res.status(401).send('Failed to post...');
